@@ -1,0 +1,140 @@
+.Login {
+  height: 100vh;
+  padding-top: 0;
+  background-image: url("./../../../assets/img/Shasthoboi.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .leMZIk {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    width: 400px;
+    text-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(107, 119, 140);
+    margin: 0px auto 24px;
+    border-radius: 3px;
+
+    ul {
+      display: flex;
+      -webkit-box-pack: center;
+      justify-content: center;
+      list-style: none;
+      padding: 0px;
+
+      li {
+        list-style: none;
+
+        &:last-child {
+          &::before {
+            content: "•";
+            margin: 0px 8px;
+          }
+        }
+
+        a {
+          color: rgb(0, 82, 204);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+
+  .login-box {
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+    box-sizing: border-box;
+    color: rgb(94, 108, 132);
+    margin: 0px auto 24px;
+    padding: 32px 40px;
+    background: rgb(255, 255, 255);
+    border-radius: 3px;
+  }
+  
+  .login-box-title{
+    text-align: center;
+    p{
+      font-size: 15px;
+      font-weight: bold;  
+    }
+  }
+
+  .ant-form label{
+    font-size: 15px;
+  }
+
+  .ant-btn{
+    height: 42px;
+  }
+
+  .login-logo {
+    padding-bottom: 24px;
+    margin: 0;
+    .logoBox {
+      width: 350px;
+      padding: 16px 48px 0;
+    }
+  }
+
+  form {
+    // margin: 0px auto;
+    // width: 100%;
+    // max-width: 448px;
+    // padding: 30px 48px 32px 48px;
+
+    .formTitle {
+      line-height: 28px;
+      font-size: 20px;
+      color: rgba(0, 0, 0, 0.65);
+    }
+
+    .loginForm {
+      margin-top: 20px;
+
+      span {
+        margin-top: 12px;
+        line-height: 20px;
+        font-weight: 500;
+        font-size: 14px;
+      }
+      label {
+        color: rgba(0, 0, 0, 0.65);
+        margin-bottom: 10px;
+      }
+    }
+
+    .registerLink {
+      text-align: center;
+      padding-top: 13px;
+    }
+  }
+
+  .ant-btn {
+    width: 100%;
+    border-radius: 3px;
+  }
+
+  .ant-form-item-control-input-content {
+    input {
+      border-radius: 3px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Login {
+    background-image: none;
+
+    .login-box {
+      box-shadow: none;
+    }
+  }
+}

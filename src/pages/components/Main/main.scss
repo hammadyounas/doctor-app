@@ -1,0 +1,54 @@
+article {
+  &::-webkit-scrollbar {
+    width: 5px;
+    transition: opacity 0.2s linear;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  &:hover {
+    &::-webkit-scrollbar-track {
+      background: rgba(202, 202, 202, 0.2);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.1);
+      &:hover {
+        background: rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+
+  &.introduction-end {
+    overflow: hidden;
+  }
+  .moreBtn {
+    margin-left: 5px;
+    color: #444;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+.ant-form label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 7px;
+
+  span {
+    font-size: 14px;
+    color: #a6a6a6;
+  }
+}
+
+.ant-btn {
+  width: 100%;
+}
+
+.ant-modal-content {
+  .ant-modal-footer {
+    display: none;
+  }
+}

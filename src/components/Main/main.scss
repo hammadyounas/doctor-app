@@ -1,0 +1,23 @@
+article {
+  &::-webkit-scrollbar {
+    width: 5px;
+    transition: opacity 0.2s linear;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  &:hover {
+    &::-webkit-scrollbar-track {
+      background: rgba(202, 202, 202, 0.2);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.1);
+      &:hover {
+        background: rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
